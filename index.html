@@ -15,11 +15,42 @@
 </head>
 
 <body>
+	<div class="popup popup-menu">
+		<div class="popup__body popup-menu__body">
+			<button class="popup-menu__close">
+				<img src="img/close-btn.svg" alt="">
+			</button>
+			<ul class="popup-menu__list">
+				<li class="popup-menu__item">
+					<a class="popup-menu__link popup-menu__link_active" href="#">
+						Why Dock
+					</a>
+				</li>
+				<li class="popup-menu__item">
+					<a class="popup-menu__link" href="#">
+						Solutions
+						<img src="img/arrow-smith.svg" alt="">
+					</a>
+				</li>
+				<li class="popup-menu__item">
+					<a class="popup-menu__link" href="#">
+						Templates
+					</a>
+				</li>
+				<li class="popup-menu__item">
+					<a class="popup-menu__link" href="#">
+						Library
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="popup__bg"></div>
+	</div>
 	<header class="header">
-		<div class="container header__container">
+		<div class="container container_small">
 			<div class="header__inner">
-				<a href="#">
-					<img class="logo" src="/img/logo.png" alt="Dock">
+				<a class="logo__link" href="#">
+					<img class="logo" src="img/logo.png" alt="Dock">
 				</a>
 				<menu class="menu">
 					<ul class="menu__list">
@@ -45,44 +76,46 @@
 						<button class="header-actions__btn">Get Started</button>
 					</li>
 				</ul>
+				<button class="burger-menu"><img class="burger-menu__img" src="img/burger-menu.svg" alt=""></button>
 			</div>
 		</div>
 	</header>
-	<main class="main">
-		<section class="hero">
-			<div class="container hero__container">
-				<div class="hero__inner">
-					<div class="hero__text">
-						<h1 class="title">
-							<p class="hero__title">The new way to manage external relationships</p>
-						</h1>
-						<p class="hero__text-item">Create shared spaces with prospects and customers</p>
-						<button class="hero__text-btn">Get Started</button>
-					</div>
-					<img src="img/hero-img.png" alt="">
-
+	<section class="hero">
+		<div class="container container_small">
+			<div class="hero__inner">
+				<div class="hero__text">
+					<h1 class="title">
+						<p class="hero__title">The new way to manage external relationships</p>
+					</h1>
+					<p class="hero__item">Create shared spaces with prospects and customers</p>
+					<button class="hero__btn">Get Started</button>
 				</div>
+				<img src="img/hero-img.png" alt="">
+
 			</div>
-		</section>
-	</main>
+		</div>
+	</section>
 
 	<section class="functions">
-		<div class="container functions__container">
+		<div class="container">
 			<h2 class="functions__title">
-				Transform the customer experience from <span class="functions__title-inner_text">demo to onboarding and
-					beyond</span>
+				Transform the customer experience from
+				<span>demo to onboarding and
+					beyond
+				</span>
 			</h2>
-			<p class="functions__title-text">
+			<p class="functions__desc">
 				Personalized spaces that make you look professional.
 			</p>
 			<div class="functions__inner">
-				<span class="functions__inner-border"></span>
-				<p class="functions__inner-text">
-					Clients always know where to go when they need something
-				</p>
-				<img class="functions__inner-img" src="/img/functions-main-img.png" alt="">
-				<img class="functions__inner-socials_img" src="img/socials-img.png" alt="">
-
+				<div class="functions__left">
+					<p class="functions__text">
+						Clients always know where to go when they need something
+					</p>
+					<span></span>
+					<img class="functions__socials" src="img/socials-img.png" alt="">
+				</div>
+				<img class="functions__main" src="/img/functions-main-img.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -90,38 +123,38 @@
 		<div class="container">
 			<div class="navigate__inner">
 				<img src="img/navigate-img.png" alt="">
-				<blockquote class="navigate__inner-quote">
-					<h3 class="navigate__inner-title">
+				<div class="navigate__text">
+					<h3 class="navigate__title">
 						Navigate complex deals and onboard customers
 					</h3>
-					<p class="navigate__inner-text">
+					<p class="navigate__desc">
 						Stop using that spreadsheet.
 						Instead, build a collaborative mutual action
 						plan with customers - share status, align due dates, assign tasks, leave comments and upload files.
 					</p>
-				</blockquote>
+				</div>
 			</div>
 		</div>
 	</section>
 	<section class="community">
 		<div class="container">
 			<div class="community__inner">
-				<div class="community__inner-posts">
-					<h4 class="community__inner-posts_title">
+				<div class="community-posts">
+					<h4 class="community-posts__title">
 						Personalization at scale.
 					</h4>
-					<p class="community__inner-posts_text">
+					<p class="community-posts__text">
 						Create branded spaces with custom content.
 					</p>
 					<img src="img/posts-img.png" alt="">
 
 				</div>
-				<div class="community__inner-comments">
-					<h5 class="community__inner-comments_title">Share feedback & move projects along.</h5>
-					<p class="community__inner-comments_text">
+				<div class="community-comments">
+					<h5 class="community-comments__title">Share feedback & move projects along.</h5>
+					<p class="community-comments__text">
 						Customers comment on what you’re working on and share key resources with file uploads.
 					</p>
-					<img class="community__inner-comments_img" src="img/comments-img.png" alt="">
+					<img src="img/comments-img.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -131,72 +164,72 @@
 			<h6 class="activity__title">
 				Uplevel how Sales and Customer teams work
 			</h6>
-			<p class="activity__title_desc">
+			<p class="activity__desc">
 				Dock helps leadership build a repeatable sales and customer success process.
 			</p>
 			<div class="activity__inner">
 				<p class="activity__text">
 					Understand what content performs
 				</p>
-				<img src="/img/activity-img.png" alt="">
+				<img src="img/activity-img.png" alt="">
 			</div>
 		</div>
 	</section>
 	<section class="advantage">
 		<div class="container">
 			<div class="advantage__inner">
-				<div class="timesave">
-					<p class="timesave__title">Save Time.</p>
-					<p class="timesave__title_desc">
+				<div class="advantage-item">
+					<p class="advantage-item__title">Save Time.</p>
+					<p class="advantage-item__desc">
 						Duplicate work from project to project,
 						so you’re not starting from
 						scratch every time.
 					</p>
-					<img src="/img/timesave-img.png" alt="">
+					<img src="img/timesave-img.png" alt="">
 				</div>
-				<div class="msg">
-					<p class="msg__title">
+				<div class="advantage-item">
+					<p class="advantage-item__title">
 						Move the relationship forward.
 					</p>
-					<p class="msg__title_desc">
+					<p class="advantage-item__desc">
 						Notifications give visibility into how the project is moving along.
 					</p>
 					<img src="img/msg-img.png" alt="">
 				</div>
 				<div class="usage">
-					<div class="usage__title_div">
+					<div class="usage__text">
 						<p class="usage__title">
 							Discover how Sales and Customer teams use Dock everyday
 						</p>
-						<p class="usage__title_desc">
+						<p class="usage__desc">
 							Dock helps companies across the customer lifecycle.
 						</p>
 					</div>
-					<div class="transform">
+					<div class="usage-item">
 						<img src="img/transform-img.svg" alt="">
-						<p class="transform__headline">SALES</p>
-						<p class="transform__title">Transform the sales experience</p>
-						<p class="transform__text">
+						<p class="usage-item__headline">SALES</p>
+						<p class="usage-item__title">Transform the sales experience</p>
+						<p class="usage-item__text">
 							Dock makes it easy for prospects to buy and helps sales teams build a
 							repeatable process.
 						</p>
-						<a class="transform__link" href="#">
+						<a class="usage-item__link" href="#">
 							Learn more
 						</a>
-						<a class="transform__link_arrow" href="#">→</a>
+						<a class="usage-item__arrow" href="#">→</a>
 					</div>
-					<div class="relationships">
+					<div class="usage-item">
 						<img src="img/relationships-img.svg" alt="">
-						<p class="relationships__headline">
+						<p class="usage-item__headline">
 							CUSTOMER SUCCESS
 						</p>
-						<p class="relationships__title">
+						<p class="usage-item__title">
 							Build strong relationships with customers
 						</p>
-						<p class="relationships__text">
+						<p class="usage-item__text">
 							Dock helps companies onboard customers and manage ongoing relationships.
 						</p>
-						<a class="relationships__link" href="#">
+						<a class="usage-item__link" href="#">
 							Learn more
 						</a>
 					</div>
@@ -205,43 +238,43 @@
 		</div>
 	</section>
 	<section class="explore">
-		<div class="container">
+		<div class="container explore__container">
 			<p class="explore__title">Explore Dock templates</p>
-			<p class="explore__title_desc">
+			<p class="explore__desc">
 				Explore templates for sales, customer success,
 				and agencies. Customize any
 				template and share with clients.</p>
 			<button class="explore__btn">Explore templates</button>
 			<div class="explore__inner">
-				<a class="explore__templates" href="#">
-					<img src="/img/explore-img1.png" alt="">
-					<p class="templates__headline">SALES</p>
-					<p class="templates__text">Demo Follow Up</p>
+				<a class="explore-templates" href="#">
+					<img src="img/explore-img1.png" alt="">
+					<p class="explore-templates__headline">SALES</p>
+					<p class="explore-templates__text">Demo Follow Up</p>
 				</a>
-				<a class="explore__templates" href="#">
-					<img src="/img/explore-img2.png" alt="">
-					<p class="templates__headline">SALES</p>
-					<p class="templates__text">Enterprise Sales</p>
+				<a class="explore-templates" href="#">
+					<img src="img/explore-img2.png" alt="">
+					<p class="explore-templates__headline">SALES</p>
+					<p class="explore-templates__text">Enterprise Sales</p>
 				</a>
-				<a class="explore__templates" href="#">
-					<img src="/img/explore-img3.png" alt="">
-					<p class="templates__headline">AGENCY</p>
-					<p class="templates__text">Design Proposal</p>
+				<a class="explore-templates" href="#">
+					<img src="img/explore-img3.png" alt="">
+					<p class="explore-templates__headline">AGENCY</p>
+					<p class="explore-templates__text">Design Proposal</p>
 				</a>
-				<a class="explore__templates" href="#">
-					<img src="/img/explore-img4.png" alt="">
-					<p class="templates__headline">AGENCY</p>
-					<p class="templates__text">Website Proposal</p>
+				<a class="explore-templates" href="#">
+					<img src="img/explore-img4.png" alt="">
+					<p class="explore-templates__headline">AGENCY</p>
+					<p class="explore-templates__text">Website Proposal</p>
 				</a>
-				<a class="explore__templates" href="#">
-					<img src="/img/explore-img5.png" alt="">
-					<p class="templates__headline">AGENCY</p>
-					<p class="templates__text">Brand Design Project</p>
+				<a class="explore-templates" href="#">
+					<img src="img/explore-img5.png" alt="">
+					<p class="explore-templates__headline">AGENCY</p>
+					<p class="explore-templates__text">Brand Design Project</p>
 				</a>
-				<a class="explore__templates" href="#">
-					<img src="/img/explore-img6.png" alt="">
-					<p class="templates__headline">CUSTOMER SUCCESS</p>
-					<p class="templates__text">Implementation Plan</p>
+				<a class="explore-templates" href="#">
+					<img src="img/explore-img6.png" alt="">
+					<p class="explore-templates__headline">CUSTOMER SUCCESS</p>
+					<p class="explore-templates__text">Implementation Plan</p>
 				</a>
 			</div>
 		</div>
@@ -255,12 +288,16 @@
 		</div>
 	</section>
 	<footer class="footer">
-		<div class="container">
-			<div class="footer__inner">
+		<div class="container container_small">
+			<div class="footer__bottom">
 				<div class="footer__doc">
-					<img src="img/logo.png" alt="">
+					<a class="footer__logo" href="#">
+						<img src="img/logo.png" alt="">
+					</a>
 					<p class="footer__copy">Copyright © 2021 Dock Labs, Inc. All rights reserved.</p>
 				</div>
+			</div>
+			<div class="footer__inner">
 				<div class="footer__privacy">
 					<a href="#">Legal</a>
 					<a href="#">Terms of Service</a>
@@ -280,7 +317,8 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="js/main.js"></script>
 </body>
+
 
 </html>
